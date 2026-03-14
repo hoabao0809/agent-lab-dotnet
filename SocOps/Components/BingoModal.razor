@@ -1,13 +1,28 @@
-<div class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-    <div class="bg-white rounded-xl p-6 max-w-xs w-full text-center shadow-xl animate-[bounce_0.5s_ease-out]">
-        <div class="text-5xl mb-4">🎉</div>
-        <h2 class="text-3xl font-bold text-amber-500 mb-2">BINGO!</h2>
-        <p class="text-gray-600 mb-6">You completed a line!</p>
+<div class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50 backdrop-blur-sm animate-fadeIn">
+    <div class="bg-gradient-to-br from-warm to-red-600 rounded-3xl p-8 max-w-xs w-full text-center shadow-2xl animate-slideup transform" style="box-shadow: 0 0 40px rgba(249, 115, 22, 0.5);">
+        <!-- Celebration Emoji -->
+        <div class="text-8xl mb-6 animate-bounce" style="animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); animation-duration: 0.6s;">🎉</div>
+        
+        <!-- Title -->
+        <h2 class="text-5xl font-black text-white mb-3 drop-shadow-lg" style="letter-spacing: -0.02em;">BINGO!</h2>
+        
+        <!-- Subtitle -->
+        <p class="text-white text-lg font-semibold mb-8 drop-shadow">
+            You completed a line! 🏆
+        </p>
 
+        <!-- Decorative elements -->
+        <div class="mb-8 flex justify-center gap-2">
+            <span class="text-3xl animate-bounce" style="animation-delay: 0s;">⭐</span>
+            <span class="text-3xl animate-bounce" style="animation-delay: 0.1s;">✨</span>
+            <span class="text-3xl animate-bounce" style="animation-delay: 0.2s;">⭐</span>
+        </div>
+
+        <!-- Button -->
         <button
             @onclick="OnDismiss"
-            class="w-full bg-accent text-white font-semibold py-3 px-6 rounded-lg active:bg-accent-light transition-colors">
-            Keep Playing
+            class="w-full bg-white text-warm font-black py-4 px-6 rounded-xl text-lg active:opacity-90 transition-all duration-200 shadow-lg hover:shadow-2xl hover:-translate-y-1 transform">
+            Play Again 🎮
         </button>
     </div>
 </div>
